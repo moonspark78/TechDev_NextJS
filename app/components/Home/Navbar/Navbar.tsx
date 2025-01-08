@@ -24,41 +24,43 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 w-[90%] bg-white shadow-lg px-6 py-3 flex items-center justify-between z-50 mx-auto">
-      {/* Logo */}
-      <div className="flex items-center space-x-2">
-        <GrTechnology size={24} className="text-blue-500" />
-        <span className="font-bold text-blue-500 text-lg">TechDev</span>
-      </div>
+    <div className="fixed top-0 left-0 w-full bg-white shadow-lg px-6 py-3 flex items-center justify-between z-50">
+      <div className="container mx-auto flex items-center justify-between">
+        {/* Logo */}
+        <div className="flex items-center space-x-2">
+          <GrTechnology size={24} className="text-blue-500" />
+          <span className="font-bold text-blue-500 text-lg">TechDev</span>
+        </div>
 
-      {/* Middle Links */}
-      <div className="hidden lg:flex space-x-8">
-        {["Home", "Features", "Services", "Reviews", "Teams", "Pricing", "Contact"].map((link) => (
-          <a
-            key={link}
-            href={`#${link.toLowerCase()}`}
-            className="text-gray-700 hover:text-blue-500 transition font-medium"
-          >
-            {link}
-          </a>
-        ))}
-      </div>
+        {/* Middle Links */}
+        <div className="hidden lg:flex space-x-8">
+          {["Home", "Features", "Services", "Reviews", "Teams", "Pricing", "Contact"].map((link) => (
+            <a
+              key={link}
+              href={`#${link.toLowerCase()}`}
+              className="text-gray-700 hover:text-blue-500 transition font-medium"
+            >
+              {link}
+            </a>
+          ))}
+        </div>
 
-      {/* Button */}
-      <div className="hidden lg:flex items-center">
-        <button className="flex items-center bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 transition">
-          <BsLightningChargeFill className="mr-2" />
-          Create Account
-        </button>
-      </div>
+        {/* Button */}
+        <div className="hidden lg:flex items-center">
+          <button className="flex items-center bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 transition">
+            <BsLightningChargeFill className="mr-2" />
+            Create Account
+          </button>
+        </div>
 
-      {/* Mobile Menu Icon */}
-      <div className="lg:hidden">
-        <CgMenu
-          size={28}
-          className="text-gray-700 cursor-pointer"
-          onClick={() => setIsMenuOpen(true)}
-        />
+        {/* Mobile Menu Icon */}
+        <div className="lg:hidden">
+          <CgMenu
+            size={28}
+            className="text-gray-700 cursor-pointer"
+            onClick={() => setIsMenuOpen(true)}
+          />
+        </div>
       </div>
 
       {/* Mobile Menu */}
