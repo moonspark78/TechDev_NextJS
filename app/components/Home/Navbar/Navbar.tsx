@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { GrTechnology } from "react-icons/gr";
 import { BsLightningChargeFill } from "react-icons/bs";
 import { CgMenu } from "react-icons/cg";
@@ -9,8 +9,22 @@ import { IoClose } from "react-icons/io5";
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // Ferme le menu mobile si l'écran dépasse 1024px
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <div className="fixed top-0 left-0 w-[90%] bg-white shadow-lg px-6 py-3 flex items-center justify-between z-50">
+    <div className="fixed top-0 left-0 w-[90%] bg-white shadow-lg px-6 py-3 flex items-center justify-between z-50 mx-auto">
       {/* Logo */}
       <div className="flex items-center space-x-2">
         <GrTechnology size={24} className="text-blue-500" />
@@ -18,7 +32,7 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Middle Links */}
-      <div className="hidden md:flex space-x-8">
+      <div className="hidden lg:flex space-x-8">
         {["Home", "Features", "Services", "Reviews", "Teams", "Pricing", "Contact"].map((link) => (
           <a
             key={link}
@@ -31,7 +45,7 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Button */}
-      <div className="hidden md:flex items-center">
+      <div className="hidden lg:flex items-center">
         <button className="flex items-center bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 transition">
           <BsLightningChargeFill className="mr-2" />
           Create Account
@@ -39,7 +53,7 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Mobile Menu Icon */}
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <CgMenu
           size={28}
           className="text-gray-700 cursor-pointer"
