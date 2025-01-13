@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
+import { BsStarHalf } from 'react-icons/bs'
+import { FaStar } from 'react-icons/fa'
 
 const Hero = () => {
   return (
@@ -29,6 +31,50 @@ const Hero = () => {
               Recusandae, molestiae iusto.
             </p>
             {/* Ratings */}
+              <div className='flex sm:flex-row flex-col sm:items-center sm:space-x-10 mt-6'>
+                <div className='flex items-center space-x-4'>
+                  <Image
+                    src="/images/google.png"
+                    alt='google'
+                    width={40}
+                    height={40}
+                  />
+                  <div>
+                    <div className='flex items-center space-x-2'>
+                      <h1 className='text-lg sm:text-xl md:text-2xl text-gray-700 font-bold'>4.5</h1>
+                      <div className='flex items-center'>
+                        <FaStar className='w-4 h-4 text-yellow-400'/>
+                        <FaStar className='w-4 h-4 text-yellow-400'/>
+                        <FaStar className='w-4 h-4 text-yellow-400'/>
+                        <FaStar className='w-4 h-4 text-yellow-400'/>
+                        <BsStarHalf className='w-4 h-4 text-yellow-400'/>
+                      </div>
+                    </div>
+                    <p className='text-gray-700 text-sm sm:text-base'>Best Rated On Google</p>
+                  </div>
+                </div>
+                <div className='flex items-center space-x-4'>
+                  <Image
+                    src="/images/linkedin.png"
+                    alt='google'
+                    width={40}
+                    height={40}
+                  />
+                  <div>
+                    <div className='flex items-center space-x-2'>
+                      <h1 className='text-lg sm:text-xl md:text-2xl text-gray-700 font-bold'>4.7</h1>
+                      <div className='flex items-center'>
+                        <FaStar className='w-4 h-4 text-yellow-400'/>
+                        <FaStar className='w-4 h-4 text-yellow-400'/>
+                        <FaStar className='w-4 h-4 text-yellow-400'/>
+                        <FaStar className='w-4 h-4 text-yellow-400'/>
+                        <BsStarHalf className='w-4 h-4 text-yellow-400'/>
+                      </div>
+                    </div>
+                    <p className='text-gray-700 text-sm sm:text-base'>Best Rated On Google</p>
+                  </div>
+                </div>
+              </div>
           </div>
       </div>
     </div>
