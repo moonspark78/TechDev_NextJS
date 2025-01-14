@@ -1,5 +1,7 @@
 import React from 'react'
-import { MdOutlineTouchApp } from 'react-icons/md'
+import { GoWorkflow } from 'react-icons/go'
+import { LuPen } from 'react-icons/lu'
+import { MdAccessAlarm, MdOutlineTouchApp } from 'react-icons/md'
 
 const Feature = () => {
   return (
@@ -19,7 +21,7 @@ const Feature = () => {
             <div className='grid grid-cols-1 md:grid-cols-2 gap-10 items-center'>
                 {/* 1st Box */}
                 <div className='bg-white p-4 rounded-lg'>
-                    <div className='flex items-center space-x-3'>
+                    <div className='flex flex-col items-center space-x-3'>
                         {/* icon */}
                         <div>
                             <MdOutlineTouchApp className='w-6 h-6 text-orange-400'/>
@@ -28,6 +30,65 @@ const Feature = () => {
                         <h1 className='text-lg font-bold'>
                             App Integration
                         </h1>
+                        {/* Description */}
+                        <p className='mt-3 mb-3 text-gray-700 leading-relaxed'>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Quaerat distinctio facere porro aspernatur. Atque, assumenda porro.
+                        </p>
+                    </div>
+                </div>
+                {/* 2st Box */}
+                <div className='bg-white p-4 rounded-lg'>
+                    <div className='flex flex-col items-center space-x-3'>
+                        {/* icon */}
+                        <div>
+                            <GoWorkflow className='w-6 h-6 text-orange-400'/>
+                        </div>
+                        {/* Heading */}
+                        <h1 className='text-lg font-bold'>
+                            WorkFlow Builder
+                        </h1>
+                        {/* Description */}
+                        <p className='mt-3 mb-3 text-gray-700 leading-relaxed'>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Quaerat distinctio facere porro aspernatur. Atque, assumenda porro.
+                        </p>
+                    </div>
+                </div>
+                {/* 3st Box */}
+                <div className='bg-white p-4 rounded-lg'>
+                    <div className='flex flex-col items-center space-x-3'>
+                        {/* icon */}
+                        <div>
+                            <LuPen className='w-6 h-6 text-orange-400'/>
+                        </div>
+                        {/* Heading */}
+                        <h1 className='text-lg font-bold'>
+                            Problem Solution
+                        </h1>
+                        {/* Description */}
+                        <p className='mt-3 mb-3 text-gray-700 leading-relaxed'>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Quaerat distinctio facere porro aspernatur. Atque, assumenda porro.
+                        </p>
+                    </div>
+                </div>
+                {/* 4st Box */}
+                <div className='bg-white p-4 rounded-lg'>
+                    <div className='flex flex-col items-center space-x-3'>
+                        {/* icon */}
+                        <div>
+                            <MdAccessAlarm className='w-6 h-6 text-orange-400'/>
+                        </div>
+                        {/* Heading */}
+                        <h1 className='text-lg font-bold'>
+                            LifeTime Access
+                        </h1>
+                        {/* Description */}
+                        <p className='mt-3 mb-3 text-gray-700 leading-relaxed'>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Quaerat distinctio facere porro aspernatur. Atque, assumenda porro.
+                        </p>
                     </div>
                 </div>
             </div>
