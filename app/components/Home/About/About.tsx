@@ -15,7 +15,11 @@ const About = () => {
                 />
             </div>
             {/* Text Content */}
-            <div></div>
+            <div>
+              <h1 className='border-2 px-4 w-fit rounded-lg bg-gray-100 py-1 text-[#f68967] font-bold'>
+                About Us
+              </h1>
+            </div>
         </div>
     </div>
   )
