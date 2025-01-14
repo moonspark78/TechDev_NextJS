@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className='pt-16 pb-16'>
+    <div className='pt-20 pb-16'>
         <div className='w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'>
             {/* Image content */}
             <div>
@@ -35,10 +36,12 @@ const About = () => {
               <div className='mt-6 border-l-2 border-gray-200'>
                 <div className='ml-6'>
                   <p className='text-gray-700 font-medium'>
+                  <FaQuoteLeft />
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi explicabo, 
                     cupiditate nihil odit magnam aliquam ad reprehenderit delectus saepe assumenda.
+                  <FaQuoteRight />
                   </p>
-                  <div>
+                  <div className='flex items-center space-x-6 mt-6'>
                     <Image
                       src="/images/u1.jpg"
                       alt='user'
