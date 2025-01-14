@@ -15,7 +15,7 @@ const Feature = () => {
         {/* Main Grid */}
         <div className='w-[80%] mx-auto mt-16 grid grid-cols-1 xl:grid-cols-2 gap-10 items-center'>
             {/* Inner Grid */}
-            <div className=''>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-10 items-center'>
 
             </div>
         </div>
