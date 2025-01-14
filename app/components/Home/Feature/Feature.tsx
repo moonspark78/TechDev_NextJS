@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 import { GoWorkflow } from 'react-icons/go'
 import { LuPen } from 'react-icons/lu'
@@ -93,6 +94,14 @@ const Feature = () => {
                 </div>
             </div>
             {/* Image Content */}
+            <div>
+                <Image
+                    src="/images/f1.png"
+                    alt='feature'
+                    width={700}
+                    height={700}
+                />
+            </div>
         </div>
     </div>
   )
