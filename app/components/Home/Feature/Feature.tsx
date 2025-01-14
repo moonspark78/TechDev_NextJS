@@ -1,4 +1,5 @@
 import React from 'react'
+import { MdOutlineTouchApp } from 'react-icons/md'
 
 const Feature = () => {
   return (
@@ -16,8 +17,21 @@ const Feature = () => {
         <div className='w-[80%] mx-auto mt-16 grid grid-cols-1 xl:grid-cols-2 gap-10 items-center'>
             {/* Inner Grid */}
             <div className='grid grid-cols-1 md:grid-cols-2 gap-10 items-center'>
-
+                {/* 1st Box */}
+                <div className='bg-white p-4 rounded-lg'>
+                    <div className='flex items-center space-x-3'>
+                        {/* icon */}
+                        <div>
+                            <MdOutlineTouchApp className='w-6 h-6 text-orange-400'/>
+                        </div>
+                        {/* Heading */}
+                        <h1 className='text-lg font-bold'>
+                            App Integration
+                        </h1>
+                    </div>
+                </div>
             </div>
+            {/* Image Content */}
         </div>
     </div>
   )
