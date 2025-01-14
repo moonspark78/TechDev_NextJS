@@ -49,6 +49,10 @@ const About = () => {
                       height={40}
                       className='rounded-full'
                     />
+                    <div>
+                      <p className='font-medium'>Alice Jeckson</p>
+                      <p className='text-gray-600 text-sm'>Web Developer</p>
+                    </div>
                   </div>
                 </div>
               </div>
