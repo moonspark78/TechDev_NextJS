@@ -18,13 +18,13 @@ const ClientsReviews = () => {
                 <ClientsReviewsCard image="/images/u1.jpg" name="Jesica Doe" rating="4.7"/>
             </div>
             <div>
-                <ClientsReviewsCard image="/images/u1.jpg" name="Jesica Doe" rating="4.7"/>
+                <ClientsReviewsCard image="/images/u2.jpg" name="Jesica Doe" rating="4.7"/>
             </div>
             <div>
-                <ClientsReviewsCard image="/images/u1.jpg" name="Jesica Doe" rating="4.7"/>
+                <ClientsReviewsCard image="/images/u3.jpg" name="Jesica Doe" rating="4.7"/>
             </div>
             <div>
-                <ClientsReviewsCard image="/images/u1.jpg" name="Jesica Doe" rating="4.7"/>
+                <ClientsReviewsCard image="/images/u4.jpg" name="Jesica Doe" rating="4.7"/>
             </div>
         </div>
     </div>
