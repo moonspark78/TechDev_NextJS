@@ -16,6 +16,13 @@ const Services = () => {
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus culpa repudiandae
           architecto temporibus ut itaque assumenda voluptatem enim accusantium voluptatum.
         </p>
+        {/* Grid */}
+        <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 items-center gap-y-12 mt-16'>
+          {/* 1st Services */}
+          <div className='flex items-center space-x-5'>
+            {/* Icon */}
+          </div>
+        </div>
       </div>
     </div>
   )
