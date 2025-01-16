@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Rethink_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Home/Navbar/Navbar";
+import Footer from "./components/Home/Footer/Footer";
 
 const font = Rethink_Sans({
   weight: ["400", "500", "600", "700", "800"],
@@ -26,6 +27,7 @@ export default function RootLayout({
         className={`${font.className} antialiased`}>
           <Navbar/>
             {children}
+          <Footer/>
       </body>
     </html>
   );
