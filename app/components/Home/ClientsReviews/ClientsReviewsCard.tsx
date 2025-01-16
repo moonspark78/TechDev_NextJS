@@ -22,8 +22,8 @@ const ClientsReviewsCard = ({ image, name, rating }: ClientsReviewsCardProps) =>
             <Image
                 src={image}
                 alt={name}
-                width={130}
-                height={130}
+                width={230}
+                height={230}
                 className='rounded-lg'
             />
         </div>
