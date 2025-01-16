@@ -11,6 +11,14 @@ const Team = () => {
             Our Teams
           </h1>
           {/* Heading */}
+          <h1 className="mt-4 text-xl md:text-2xl font-bold text-gray-800">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos provident ad omnis.
+          </h1>
+          {/* Description */}
+          <p className="mt-4 text-gray-700">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Libero nisi nostrum voluptates enim a consectetur deserunt. Natus eaque laborum nihil.
+          </p>
         </div>
         {/* Image Content */}
         <div className="lg:col-span-3">
