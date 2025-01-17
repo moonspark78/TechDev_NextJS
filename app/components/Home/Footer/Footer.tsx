@@ -10,6 +10,31 @@ const Footer = () => {
             <p className='text-gray-800 font-medium cursor-pointer text-sm hover:text-blue-950'>
               Enterprice
             </p>
+            <p className='text-gray-800 font-medium cursor-pointer text-sm hover:text-blue-950'>
+              Enterprice
+            </p>
+            <p className='text-gray-800 font-medium cursor-pointer text-sm hover:text-blue-950'>
+              Enterprice
+            </p>
+          </div>
+        {/* 2st Part */}
+          <div className='space-y-5'>
+            <h1 className='text-lg font-bold'>Company</h1>
+            <p className='text-gray-800 font-medium cursor-pointer text-sm hover:text-blue-950'>
+              About Us
+            </p>
+            <p className='text-gray-800 font-medium cursor-pointer text-sm hover:text-blue-950'>
+              News & Press
+            </p>
+            <p className='text-gray-800 font-medium cursor-pointer text-sm hover:text-blue-950'>
+              Our Customer
+            </p>
+            <p className='text-gray-800 font-medium cursor-pointer text-sm hover:text-blue-950'>
+              Leadership
+            </p>
+            <p className='text-gray-800 font-medium cursor-pointer text-sm hover:text-blue-950'>
+              Careers
+            </p>
           </div>
       </div>
     </div>
