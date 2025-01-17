@@ -55,6 +55,22 @@ const Footer = () => {
               Careers
             </p>
           </div>
+        {/* 4st Part */}
+          <div className='space-y-5'>
+            <h1 className='text-lg font-bold'>Resources</h1>
+            <p className='text-gray-800 font-medium cursor-pointer text-sm hover:text-blue-950'>
+              Blog
+            </p>
+            <p className='text-gray-800 font-medium cursor-pointer text-sm hover:text-blue-950'>
+              Webinar & Events
+            </p>
+            <p className='text-gray-800 font-medium cursor-pointer text-sm hover:text-blue-950'>
+              Podcast
+            </p>
+            <p className='text-gray-800 font-medium cursor-pointer text-sm hover:text-blue-950'>
+              E-book & Guides
+            </p>
+          </div>
       </div>
     </div>
   )
